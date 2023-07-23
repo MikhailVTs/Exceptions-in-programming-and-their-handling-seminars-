@@ -11,7 +11,6 @@ public class PersonalInformation {
     private char gender;
     private final Scanner input = new Scanner(System.in);
 
-
     private void Entering_firstName() {
         System.out.println("\nВведите своё Имя: ");
         first_name = input.nextLine();
@@ -58,8 +57,9 @@ public class PersonalInformation {
     }
 
     private void Entering_gender() {
-        System.out.println("\nВведите свой пол, выбрав симовол 'f' или 'm':\n(m - это мужской пол, f - это женский пол)");
-        
+        System.out
+                .println("\nВведите свой пол, выбрав симовол 'f' или 'm':\n(m - это мужской пол, f - это женский пол)");
+
         String male_or_female;
         String female = "f";
         String male = "m";
@@ -72,19 +72,19 @@ public class PersonalInformation {
 
         if (male_or_female.equals(female) || male_or_female.equals(male)) {
             gender = male_or_female.charAt(0);
-        } 
-        
+        }
+
         else {
             throw new RuntimeException("Убедитесь в правильности ввода символа!");
         }
-        
+
     }
 
-    
     private void Console_output() {
-        System.out.println("\nФамилия \t- \t" + last_name + "\n" + "Имя \t\t- \t" + first_name + "\n" + "Отчество \t- \t" + middle_name + "\n" + "Дата рождения \t- \t" + year_of_birth + "\n" + "Номер телефона \t- \t" + telephone_number + "\n" + "Пол   \t\t- \t" + gender);
+        System.out.println("\nФамилия \t- \t" + last_name + "\n" + "Имя \t\t- \t" + first_name + "\n"
+                + "Отчество \t- \t" + middle_name + "\n" + "Дата рождения \t- \t" + year_of_birth + "\n"
+                + "Номер телефона \t- \t" + telephone_number + "\n" + "Пол   \t\t- \t" + gender);
     }
-
 
     private void Running_methods() {
 
@@ -106,14 +106,14 @@ public class PersonalInformation {
 
         try (FileWriter file_write = new FileWriter(text_file, true)) {
 
-            file_write.write("<" + first_name + "> " + "<" + last_name + "> " + "<" + middle_name + "> " + "<" + year_of_birth + "> " + "<" + telephone_number + "> " + "<" + gender + ">\n");
-        
+            file_write.write("<" + first_name + "> " + "<" + last_name + "> " + "<" + middle_name + "> " + "<"
+                    + year_of_birth + "> " + "<" + telephone_number + "> " + "<" + gender + ">\n");
+
         } catch (Exception e) {
 
             System.out.println("Не удачная попытка сохранения данных в текстовый файл");
         }
     }
-
 
     public String getFirst_name() {
         return first_name;
