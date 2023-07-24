@@ -1,0 +1,2 @@
+<Ivan> <Ivanov> <Ivanovich> <01.01.1980> <70000000000> <m>
+<Aleksei> <Ivanov> <Vladimirovich> <01.04.1984> <70000000004> <m>

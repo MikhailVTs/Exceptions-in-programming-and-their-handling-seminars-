@@ -1,4 +1,6 @@
 import java.io.FileWriter;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class PersonalInformation {
@@ -104,7 +106,7 @@ public class PersonalInformation {
 
         String text_file = "task_3\\files\\" + last_name + ".txt";
 
-        try (FileWriter file_write = new FileWriter(text_file, true)) {
+        try (FileWriter file_write = new FileWriter(text_file, true )) {
 
             file_write.write("<" + first_name + "> " + "<" + last_name + "> " + "<" + middle_name + "> " + "<"
                     + year_of_birth + "> " + "<" + telephone_number + "> " + "<" + gender + ">\n");
