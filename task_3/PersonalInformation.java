@@ -102,7 +102,7 @@ public class PersonalInformation {
 
         Running_methods();
 
-        String text_file = "file/" + last_name + ".txt";
+        String text_file = "task_3\\files\\" + last_name + ".txt";
 
         try (FileWriter file_write = new FileWriter(text_file, true)) {
 
