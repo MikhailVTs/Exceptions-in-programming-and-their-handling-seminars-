@@ -15,7 +15,7 @@ public class PersonalInformation {
         System.out.println("\nВведите своё Имя: ");
         first_name = input.nextLine();
         if (first_name.equals("")) {
-            throw new RuntimeException("Внимание!\nВсе поля дожны быть заполнены!\n");
+            throw new RuntimeException("Внимание!\nВсе поля должны быть заполнены!\n");
         }
     }
 
@@ -23,7 +23,7 @@ public class PersonalInformation {
         System.out.println("\nВведите свою фамилию: ");
         last_name = input.nextLine();
         if (last_name.equals("")) {
-            throw new RuntimeException("Внимание!\nВсе поля дожны быть заполнены!\n");
+            throw new RuntimeException("Внимание!\nВсе поля должны быть заполнены!\n");
         }
     }
 
@@ -31,7 +31,7 @@ public class PersonalInformation {
         System.out.println("\nВведите своё отчество: ");
         middle_name = input.nextLine();
         if (middle_name.equals("")) {
-            throw new RuntimeException("Внимание!\nВсе поля дожны быть заполнены!\n");
+            throw new RuntimeException("Внимание!\nВсе поля должны быть заполнены!\n");
         }
     }
 
@@ -39,7 +39,7 @@ public class PersonalInformation {
         System.out.println("\nВведите свой год рождения,\nформат ввода - '01.01.2000': ");
         year_of_birth = input.nextLine();
         if (year_of_birth.equals("")) {
-            throw new RuntimeException("Внимание!\nВсе поля дожны быть заполнены!\n");
+            throw new RuntimeException("Внимание!\nВсе поля должны быть заполнены!\n");
         }
     }
 
@@ -48,7 +48,7 @@ public class PersonalInformation {
             System.out.println("\nВведите свой номер телефона,\nформат ввода - '+7ХХХХХХХХХХ': ");
             String phone_number = input.nextLine();
             if (phone_number.equals("")) {
-                throw new RuntimeException("Внимание!\nВсе поля дожны быть заполнены!\n");
+                throw new RuntimeException("Внимание!\nВсе поля должны быть заполнены!\n");
             }
             telephone_number = Long.parseLong(phone_number);
         } catch (NumberFormatException e) {
@@ -58,7 +58,7 @@ public class PersonalInformation {
 
     private void Entering_gender() {
         System.out
-                .println("\nВведите свой пол, выбрав симовол 'f' или 'm':\n(m - это мужской пол, f - это женский пол)");
+                .println("\nВведите свой пол, выбрав символ 'f' или 'm':\n(m - это мужской пол, f - это женский пол)");
 
         String male_or_female;
         String female = "f";
